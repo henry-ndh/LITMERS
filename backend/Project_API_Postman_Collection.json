@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "project-api-collection",
+		"name": "Project & Favorites API",
+		"description": "API endpoints for Project Management and Favorite Projects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "access_token",
+			"value": "your_jwt_token_here",
+			"type": "string"
+		},
+		{
+			"key": "teamId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "projectId",
+			"value": "1",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Project Management",
+			"item": [
+				{
+					"name": "Create Project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"teamId\": 1,\n  \"name\": \"My New Project\",\n  \"description\": \"Project description here\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/project",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project"]
+						},
+						"description": "Create a new project in a team. User must be a member of the team.\n\nRequired:\n- teamId: ID of the team\n- name: Project name (max 100 characters)\n\nOptional:\n- description: Project description (max 2000 characters)"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated Project Name\",\n  \"description\": \"Updated description\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}"]
+						},
+						"description": "Update project information. User must be a member of the team that owns the project."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}"]
+						},
+						"description": "Soft delete a project. Only project owner can delete."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}"]
+						},
+						"description": "Get project information by ID. User must be a member of the team."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}/detail",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}", "detail"]
+						},
+						"description": "Get detailed project information including issue count. User must be a member of the team."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Projects By Team",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/team/{{teamId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "team", "{{teamId}}"]
+						},
+						"description": "Get all projects in a team. User must be a member of the team."
+					},
+					"response": []
+				},
+				{
+					"name": "Get My Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/my-projects",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "my-projects"]
+						},
+						"description": "Get all projects that the current user has access to (from all teams user is a member of)."
+					},
+					"response": []
+				},
+				{
+					"name": "Archive Project",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"isArchived\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}/archive",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}", "archive"]
+						},
+						"description": "Archive or unarchive a project. Set isArchived to true to archive, false to unarchive.\n\nUser must be a member of the team."
+					},
+					"response": []
+				},
+				{
+					"name": "Unarchive Project",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"isArchived\": false\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}/archive",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}", "archive"]
+						},
+						"description": "Unarchive a project. Set isArchived to false."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for project CRUD operations"
+		},
+		{
+			"name": "Favorite Projects",
+			"item": [
+				{
+					"name": "Add Favorite Project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}/favorite",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}", "favorite"]
+						},
+						"description": "Add a project to favorites. User must have access to the project."
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Favorite Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/{{projectId}}/favorite",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "{{projectId}}", "favorite"]
+						},
+						"description": "Remove a project from favorites."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Favorite Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/project/favorites",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "project", "favorites"]
+						},
+						"description": "Get all favorite projects of the current user."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for managing favorite projects"
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Automatically save access token to collection variable",
+									"var jsonData = pm.response.json();",
+									"if (jsonData.data && jsonData.data.accessToken) {",
+									"    pm.collectionVariables.set(\"access_token\", jsonData.data.accessToken);",
+									"    console.log(\"Access token saved:\", jsonData.data.accessToken);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "auth", "login"]
+						},
+						"description": "Login to get access token. Token will be automatically saved to collection variables.\n\nDefault users:\n- Admin: admin@gmail.com / 123456\n- User: user@gmail.com / 123456"
+					},
+					"response": []
+				}
+			],
+			"description": "Authentication endpoints (for testing purposes)"
+		}
+	]
+}
+

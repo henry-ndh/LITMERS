@@ -1,0 +1,19 @@
+services:
+  litmers.api:
+    build:
+      context: .
+      dockerfile: Main.API/Dockerfile
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://0.0.0.0:25255
+
+    ports:
+      - "25255:25255"
+    volumes:
+      - logs:/app/Logs
+      - uploads:/app/Uploads
+
+volumes:
+  logs:
+  uploads:

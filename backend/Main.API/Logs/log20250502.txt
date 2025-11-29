@@ -1,0 +1,4 @@
+2025-05-02 21:36:59.999 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 37.3076 ms
+2025-05-02 21:37:00.214 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.1894 ms
+2025-05-02 21:37:10.121 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 5618.8599 ms
+2025-05-02 21:37:22.379 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 689.9679 ms

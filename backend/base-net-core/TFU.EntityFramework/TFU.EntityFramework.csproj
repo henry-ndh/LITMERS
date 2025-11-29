@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="TFUDataContext.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.25" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
+		<PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="6.0.25" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TFU.Common\TFU.Common.csproj" />
+		<ProjectReference Include="..\TFU.Models\TFU.Models.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	</ItemGroup>
+
+</Project>

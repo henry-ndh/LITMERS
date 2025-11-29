@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Configurations>Debug;Release</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Implements\CareerPathRepository.cs" />
+		<Compile Remove="Implements\CategoryRepository.cs" />
+		<Compile Remove="Implements\CourseRepository.cs" />
+		<Compile Remove="Implements\ExaminationRepository.cs" />
+		<Compile Remove="Implements\QuestionRepository.cs" />
+		<Compile Remove="Interfaces\ICareerPathRepository.cs" />
+		<Compile Remove="Interfaces\ICategoryRepository.cs" />
+		<Compile Remove="Interfaces\ICourseRepository.cs" />
+		<Compile Remove="Interfaces\IExaminationRepository.cs" />
+		<Compile Remove="Interfaces\IQuestionRepository.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="1.60.6" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TFU.EntityFramework\TFU.EntityFramework.csproj" />
+	</ItemGroup>
+
+</Project>

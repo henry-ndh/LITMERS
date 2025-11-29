@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Configurations>Debug;Release;Beta</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Implements\CareerPathBizLogic.cs" />
+    <Compile Remove="Implements\CategoryBizLogic.cs" />
+    <Compile Remove="Implements\CourseLogic.cs" />
+    <Compile Remove="Implements\ExaminationLogic.cs" />
+    <Compile Remove="Implements\QuestionLogic.cs" />
+    <Compile Remove="Interfaces\ICareerPathBizLogic.cs" />
+    <Compile Remove="Interfaces\ICategoryBizLogic.cs" />
+    <Compile Remove="Interfaces\ICourseLogic.cs" />
+    <Compile Remove="Interfaces\IExaminationLogic.cs" />
+    <Compile Remove="Interfaces\IQuestionLogic.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TFU.Common.Models\TFU.Common.Models.csproj" />
+    <ProjectReference Include="..\TFU.DAL\TFU.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

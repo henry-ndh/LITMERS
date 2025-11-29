@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Invitation</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout: fixed;">
+        <tr>
+            <td align="center" style="padding: 20px 0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);">
+
+                    <tr>
+                        <td style="padding: 30px; text-align: center; background-color: #007BFF; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                            <h1 style="margin: 0; font-size: 24px; color: #ffffff;">🤝 You're Invited to a Team!</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 30px;">
+                            <p style="font-size: 16px; line-height: 1.6; color: #333333;">Hello there,</p>
+
+                            <p style="font-size: 16px; line-height: 1.6; color: #333333;">You have been invited by **{{InviterName}}** to join the team: **{{TeamName}}**.</p>
+
+                            <p style="font-size: 16px; line-height: 1.6; color: #333333;">Click the button below to accept the invitation and join our team:</p>
+
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 20px auto; width: 100%;">
+                                <tr>
+                                    <td align="center" style="padding: 10px 0;">
+                                        <a href="{{InviteLink}}" target="_blank" style="display: inline-block; padding: 12px 25px; font-size: 16px; color: #ffffff; background-color: #007BFF; border-radius: 5px; text-decoration: none; font-weight: bold;">
+                                            Accept Invitation
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="font-size: 14px; line-height: 1.6; color: #777777;">If the button above doesn't work, please copy and paste the link below into your web browser:</p>
+                            <p style="font-size: 14px; color: #007BFF; word-break: break-all;"><a href="{{InviteLink}}" style="color: #007BFF; text-decoration: none;">{{InviteLink}}</a></p>
+
+                            <p style="font-size: 16px; line-height: 1.6; color: #333333; margin-top: 30px;">Best regards,</p>
+                            <p style="font-size: 16px; color: #333333; margin: 0;">The Support Team</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 20px; text-align: center; font-size: 12px; color: #aaaaaa; background-color: #eeeeee; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+                            <p style="margin: 0;">This invitation will expire in 7 days.</p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

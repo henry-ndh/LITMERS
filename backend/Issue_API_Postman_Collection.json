@@ -1,0 +1,717 @@
+{
+	"info": {
+		"_postman_id": "issue-api-collection",
+		"name": "Issue & Kanban API",
+		"description": "API endpoints for Issue Management, Statuses (Columns), Labels, Subtasks, and History",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000",
+			"type": "string"
+		},
+		{
+			"key": "access_token",
+			"value": "your_jwt_token_here",
+			"type": "string"
+		},
+		{
+			"key": "projectId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "statusId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "issueId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "labelId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "subtaskId",
+			"value": "1",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Issue Status Management",
+			"item": [
+				{
+					"name": "Create Issue Status",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"To Do\",\n  \"color\": \"#3B82F6\",\n  \"position\": 0,\n  \"isDefault\": false,\n  \"wipLimit\": null\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/status?projectId={{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "status"],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{projectId}}"
+								}
+							]
+						},
+						"description": "Create a new issue status (Kanban column) for a project.\n\nRequired:\n- name: Status name (max 30 characters)\n- position: Column position (0-based)\n\nOptional:\n- color: Hex color code (e.g., #3B82F6)\n- isDefault: Set as default status\n- wipLimit: Work in progress limit (null = unlimited)"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Issue Status",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"In Progress\",\n  \"color\": \"#F59E0B\",\n  \"position\": 1,\n  \"isDefault\": false,\n  \"wipLimit\": 5\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/status/{{statusId}}?projectId={{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "status", "{{statusId}}"],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{projectId}}"
+								}
+							]
+						},
+						"description": "Update an issue status. User must have access to the project."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Issue Status",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/status/{{statusId}}?projectId={{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "status", "{{statusId}}"],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{projectId}}"
+								}
+							]
+						},
+						"description": "Delete an issue status. Cannot delete if status has issues."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issue Status By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/status/{{statusId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "status", "{{statusId}}"]
+						},
+						"description": "Get issue status information by ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issue Statuses By Project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/status/project/{{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "status", "project", "{{projectId}}"]
+						},
+						"description": "Get all issue statuses (Kanban columns) for a project, ordered by position."
+					},
+					"response": []
+				},
+				{
+					"name": "Reorder Statuses",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[1, 2, 3, 4]"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/status/reorder?projectId={{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "status", "reorder"],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{projectId}}"
+								}
+							]
+						},
+						"description": "Reorder issue statuses. Provide array of status IDs in desired order."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for managing issue statuses (Kanban columns)"
+		},
+		{
+			"name": "Issue Management",
+			"item": [
+				{
+					"name": "Create Issue",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"projectId\": 1,\n  \"statusId\": 1,\n  \"title\": \"Fix login bug\",\n  \"description\": \"User cannot login with Google account\",\n  \"assigneeId\": null,\n  \"dueDate\": \"2024-12-31\",\n  \"priority\": 0,\n  \"position\": 0,\n  \"labelIds\": [1, 2]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue"]
+						},
+						"description": "Create a new issue.\n\nRequired:\n- projectId: ID of the project\n- statusId: ID of the status (column)\n- title: Issue title (max 200 characters)\n- position: Position in the column\n\nOptional:\n- description: Issue description\n- assigneeId: User ID to assign to\n- dueDate: Due date (YYYY-MM-DD)\n- priority: 0=HIGH, 1=MEDIUM, 2=LOW (default: 1)\n- labelIds: Array of label IDs"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Issue",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statusId\": 2,\n  \"title\": \"Updated title\",\n  \"description\": \"Updated description\",\n  \"assigneeId\": 3,\n  \"dueDate\": \"2024-12-25\",\n  \"priority\": 0,\n  \"position\": 1,\n  \"labelIds\": [1, 3]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}"]
+						},
+						"description": "Update an issue. All fields are optional. Changes are tracked in history."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Issue",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}"]
+						},
+						"description": "Soft delete an issue. Only issue owner can delete."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issue By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}"]
+						},
+						"description": "Get issue information by ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issue Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/detail",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "detail"]
+						},
+						"description": "Get detailed issue information including subtasks and labels."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issues By Project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/project/{{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "project", "{{projectId}}"]
+						},
+						"description": "Get all issues in a project, ordered by status position and issue position."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issues By Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/status/{{statusId}}/issues",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "status", "{{statusId}}", "issues"]
+						},
+						"description": "Get all issues in a specific status (column), ordered by position."
+					},
+					"response": []
+				},
+				{
+					"name": "Move Issue",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statusId\": 2,\n  \"position\": 0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/move",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "move"]
+						},
+						"description": "Move an issue to a different status (column) and position. Used for drag-and-drop in Kanban board."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for issue CRUD operations"
+		},
+		{
+			"name": "Project Label Management",
+			"item": [
+				{
+					"name": "Create Project Label",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Bug\",\n  \"color\": \"#EF4444\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/label?projectId={{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "label"],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{projectId}}"
+								}
+							]
+						},
+						"description": "Create a new label for a project.\n\nRequired:\n- name: Label name (max 30 characters)\n- color: Hex color code (e.g., #EF4444)"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project Label",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Critical Bug\",\n  \"color\": \"#DC2626\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/label/{{labelId}}?projectId={{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "label", "{{labelId}}"],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{projectId}}"
+								}
+							]
+						},
+						"description": "Update a project label."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project Label",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/label/{{labelId}}?projectId={{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "label", "{{labelId}}"],
+							"query": [
+								{
+									"key": "projectId",
+									"value": "{{projectId}}"
+								}
+							]
+						},
+						"description": "Delete a project label. Removes label from all issues."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Label By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/label/{{labelId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "label", "{{labelId}}"]
+						},
+						"description": "Get label information by ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project Labels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/label/project/{{projectId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "label", "project", "{{projectId}}"]
+						},
+						"description": "Get all labels for a project."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for managing project labels"
+		},
+		{
+			"name": "Issue Label Management",
+			"item": [
+				{
+					"name": "Add Label To Issue",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/label/{{labelId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "label", "{{labelId}}"]
+						},
+						"description": "Add a label to an issue."
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Label From Issue",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/label/{{labelId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "label", "{{labelId}}"]
+						},
+						"description": "Remove a label from an issue."
+					},
+					"response": []
+				},
+				{
+					"name": "Update Issue Labels",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[1, 2, 3]"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/labels",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "labels"]
+						},
+						"description": "Update all labels for an issue. Provide array of label IDs."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for managing labels on issues"
+		},
+		{
+			"name": "Subtask Management",
+			"item": [
+				{
+					"name": "Create Subtask",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Check user authentication\",\n  \"position\": 0\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/subtask",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "subtask"]
+						},
+						"description": "Create a new subtask for an issue.\n\nRequired:\n- title: Subtask title (max 200 characters)\n- position: Position in the list"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Subtask",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Updated subtask title\",\n  \"isDone\": true,\n  \"position\": 1\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/subtask/{{subtaskId}}?issueId={{issueId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "subtask", "{{subtaskId}}"],
+							"query": [
+								{
+									"key": "issueId",
+									"value": "{{issueId}}"
+								}
+							]
+						},
+						"description": "Update a subtask. All fields are optional."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Subtask",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/subtask/{{subtaskId}}?issueId={{issueId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "subtask", "{{subtaskId}}"],
+							"query": [
+								{
+									"key": "issueId",
+									"value": "{{issueId}}"
+								}
+							]
+						},
+						"description": "Delete a subtask."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subtask By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/subtask/{{subtaskId}}",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "subtask", "{{subtaskId}}"]
+						},
+						"description": "Get subtask information by ID."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Subtasks By Issue",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/subtasks",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "subtasks"]
+						},
+						"description": "Get all subtasks for an issue, ordered by position."
+					},
+					"response": []
+				},
+				{
+					"name": "Reorder Subtasks",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[1, 2, 3, 4]"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/subtasks/reorder",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "subtasks", "reorder"]
+						},
+						"description": "Reorder subtasks. Provide array of subtask IDs in desired order."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for managing issue subtasks"
+		},
+		{
+			"name": "Issue History",
+			"item": [
+				{
+					"name": "Get Issue History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/issue/{{issueId}}/history?limit=50",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "issue", "{{issueId}}", "history"],
+							"query": [
+								{
+									"key": "limit",
+									"value": "50",
+									"description": "Number of history entries to return (default: 50)"
+								}
+							]
+						},
+						"description": "Get issue history (activity log). Shows all changes made to the issue including status, assignee, priority, title, and due date changes."
+					},
+					"response": []
+				}
+			],
+			"description": "Endpoints for viewing issue activity history"
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Automatically save access token to collection variable",
+									"var jsonData = pm.response.json();",
+									"if (jsonData.data && jsonData.data.accessToken) {",
+									"    pm.collectionVariables.set(\"access_token\", jsonData.data.accessToken);",
+									"    console.log(\"Access token saved:\", jsonData.data.accessToken);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"123456\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": ["{{baseUrl}}"],
+							"path": ["api", "auth", "login"]
+						},
+						"description": "Login to get access token. Token will be automatically saved to collection variables.\n\nDefault users:\n- Admin: admin@gmail.com / 123456\n- User: user@gmail.com / 123456"
+					},
+					"response": []
+				}
+			],
+			"description": "Authentication endpoints (for testing purposes)"
+		}
+	]
+}
+

@@ -1,0 +1,539 @@
+2025-04-29 21:17:04.445 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:17:04.555 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:17:04.557 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:17:04.614 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:17:04.616 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:17:04.616 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:17:04.978 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:17:05.082 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 104.6818ms
+2025-04-29 21:17:05.091 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:17:05.097 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.5813ms
+2025-04-29 21:17:05.149 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:17:05.168 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.6572ms
+2025-04-29 21:17:05.256 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:17:05.268 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.8807ms
+2025-04-29 21:17:08.699 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - null null
+2025-04-29 21:17:08.717 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:17:08.731 +07:00 [INF] Route matched with {action = "GetChatBotID", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatBotID() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:17:09.605 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType5`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-29 21:17:09.610 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API) in 875.7593ms
+2025-04-29 21:17:09.611 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:17:09.613 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 910.3220 ms
+2025-04-29 21:17:09.615 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - 200 null application/json; charset=utf-8 916.0884ms
+2025-04-29 21:17:25.980 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:17:26.086 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:17:26.087 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:17:26.229 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:17:26.230 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:17:26.230 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:17:26.256 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:17:26.335 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 78.7918ms
+2025-04-29 21:17:26.340 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:17:26.342 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:17:26.345 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.7406ms
+2025-04-29 21:17:26.360 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.3143ms
+2025-04-29 21:17:26.409 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:17:26.418 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.4241ms
+2025-04-29 21:18:34.140 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:18:34.250 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:18:34.252 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:18:34.310 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:18:34.312 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:18:34.313 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:18:34.381 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:18:34.468 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 86.8682ms
+2025-04-29 21:18:34.494 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:18:34.494 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:18:34.499 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.512ms
+2025-04-29 21:18:34.514 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8793ms
+2025-04-29 21:18:34.554 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:18:34.565 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.6231ms
+2025-04-29 21:18:41.188 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - null null
+2025-04-29 21:18:41.210 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:18:41.223 +07:00 [INF] Route matched with {action = "GetChatBotID", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatBotID() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:18:42.088 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`1[[System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-29 21:18:42.095 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API) in 867.7158ms
+2025-04-29 21:18:42.096 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:18:42.098 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 904.2149 ms
+2025-04-29 21:18:42.100 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - 200 null application/json; charset=utf-8 911.9317ms
+2025-04-29 21:18:55.228 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:18:55.323 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:18:55.325 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:18:55.383 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:18:55.385 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:18:55.386 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:18:55.568 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:18:55.647 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 78.9887ms
+2025-04-29 21:18:55.651 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:18:55.652 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:18:55.656 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.3295ms
+2025-04-29 21:18:55.669 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.4128ms
+2025-04-29 21:18:55.717 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:18:55.727 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.0377ms
+2025-04-29 21:19:02.460 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:19:02.579 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:19:02.581 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:19:02.640 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:19:02.642 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:19:02.642 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:19:02.758 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:19:02.872 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 114.5718ms
+2025-04-29 21:19:02.882 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:19:02.882 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:19:02.894 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 11.6467ms
+2025-04-29 21:19:02.910 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.3617ms
+2025-04-29 21:19:02.960 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:19:02.972 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.2083ms
+2025-04-29 21:19:08.287 +07:00 [INF] Application is shutting down...
+2025-04-29 21:19:11.491 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:19:11.589 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:19:11.590 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:19:11.644 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:19:11.646 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:19:11.646 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:19:12.048 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:19:12.128 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 80.9154ms
+2025-04-29 21:19:12.134 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:19:12.134 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:19:12.139 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.087ms
+2025-04-29 21:19:12.154 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.0921ms
+2025-04-29 21:19:12.198 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:19:12.209 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.5679ms
+2025-04-29 21:21:05.294 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:21:05.392 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:21:05.394 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:21:05.447 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:21:05.449 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:21:05.449 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:21:05.568 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:21:05.650 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 82.2942ms
+2025-04-29 21:21:05.673 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:21:05.673 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:21:05.677 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.8306ms
+2025-04-29 21:21:05.692 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.2271ms
+2025-04-29 21:21:05.728 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:21:05.737 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.2972ms
+2025-04-29 21:21:06.524 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:21:06.531 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 7.1824ms
+2025-04-29 21:21:06.558 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:21:06.561 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 2.5163ms
+2025-04-29 21:21:06.607 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:21:06.616 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.8229ms
+2025-04-29 21:21:06.701 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:21:06.709 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.728ms
+2025-04-29 21:21:11.586 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/get-profile-by-user - null null
+2025-04-29 21:21:11.605 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.GetProfileByUser (EventZ.API)'
+2025-04-29 21:21:11.619 +07:00 [INF] Route matched with {action = "GetProfileByUser", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProfileByUser() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:21:11.793 +07:00 [ERR] [Get profile by user] Test error: Simulating a failure to fetch user profile    at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 195
+2025-04-29 21:21:11.798 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'TFU.Common.TFUResponse'.
+2025-04-29 21:21:11.812 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.GetProfileByUser (EventZ.API) in 187.0405ms
+2025-04-29 21:21:11.814 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.GetProfileByUser (EventZ.API)'
+2025-04-29 21:21:11.815 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 400 in 224.8199 ms
+2025-04-29 21:21:11.817 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/get-profile-by-user - 400 null application/json; charset=utf-8 231.8266ms
+2025-04-29 21:22:36.671 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:22:36.787 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:22:36.789 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:22:36.854 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:22:36.856 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:22:36.856 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:22:36.928 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:22:37.008 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 80.9593ms
+2025-04-29 21:22:37.032 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:22:37.032 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:22:37.037 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.864ms
+2025-04-29 21:22:37.049 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.6724ms
+2025-04-29 21:22:37.086 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:22:37.098 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.603ms
+2025-04-29 21:23:43.449 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:23:43.549 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:23:43.551 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:23:43.608 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:23:43.610 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:23:43.610 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:23:43.737 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:23:43.817 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 81.1502ms
+2025-04-29 21:23:43.823 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:23:43.823 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:23:43.829 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.4294ms
+2025-04-29 21:23:43.843 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 19.8258ms
+2025-04-29 21:23:43.891 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:23:43.902 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.5909ms
+2025-04-29 21:24:04.095 +07:00 [INF] Application is shutting down...
+2025-04-29 21:24:07.719 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:24:07.823 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:24:07.824 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:24:07.880 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:24:07.882 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:24:07.883 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:24:08.247 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:24:08.328 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 82.6995ms
+2025-04-29 21:24:08.337 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:24:08.342 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.8ms
+2025-04-29 21:24:08.398 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:24:08.419 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.8549ms
+2025-04-29 21:24:08.491 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:24:08.501 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.9679ms
+2025-04-29 21:24:12.399 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/test-error - null null
+2025-04-29 21:24:12.421 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.TestError (EventZ.API)'
+2025-04-29 21:24:12.439 +07:00 [INF] Route matched with {action = "TestError", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestError() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:24:12.602 +07:00 [ERR] [TestError] Lỗi test
+System.Exception: Lỗi thử nghiệm gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:24:12.617 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-29 21:24:12.623 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.TestError (EventZ.API) in 178.856ms
+2025-04-29 21:24:12.624 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.TestError (EventZ.API)'
+2025-04-29 21:24:12.626 +07:00 [ERR] HTTP GET /Auth/test-error responded 500 in 221.2372 ms
+2025-04-29 21:24:12.628 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/test-error - 500 null application/json; charset=utf-8 228.8024ms
+2025-04-29 21:25:29.448 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:25:29.546 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:25:29.548 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:25:29.605 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:25:29.606 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:25:29.606 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:25:29.723 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:25:29.802 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 79.5579ms
+2025-04-29 21:25:29.827 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:25:29.827 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:25:29.833 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.8774ms
+2025-04-29 21:25:29.845 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.453ms
+2025-04-29 21:25:29.894 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:25:29.903 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.1637ms
+2025-04-29 21:25:32.819 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:25:32.826 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 6.5205ms
+2025-04-29 21:25:32.834 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:25:32.835 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:25:32.837 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 1.9919ms
+2025-04-29 21:25:32.843 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.8383ms
+2025-04-29 21:25:32.900 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:25:32.908 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.2954ms
+2025-04-29 21:25:42.962 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/test-error - null null
+2025-04-29 21:25:42.984 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.TestError (EventZ.API)'
+2025-04-29 21:25:42.996 +07:00 [INF] Route matched with {action = "TestError", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestError() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:25:43.153 +07:00 [ERR] [TestError] Lỗi test
+System.Exception: Lỗi thử nghiệm gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:25:43.167 +07:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-29 21:25:43.173 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.TestError (EventZ.API) in 174.1362ms
+2025-04-29 21:25:43.174 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.TestError (EventZ.API)'
+2025-04-29 21:25:43.176 +07:00 [ERR] HTTP GET /Auth/test-error responded 500 in 208.2606 ms
+2025-04-29 21:25:43.178 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/test-error - 500 null application/json; charset=utf-8 215.7661ms
+2025-04-29 21:26:44.653 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:26:44.760 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:26:44.761 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:26:44.818 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:26:44.820 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:26:44.821 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:26:44.928 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:26:45.012 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 84.492ms
+2025-04-29 21:26:45.073 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:26:45.077 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:26:45.077 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 4.4836ms
+2025-04-29 21:26:45.094 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.7728ms
+2025-04-29 21:26:45.184 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:26:45.194 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.2525ms
+2025-04-29 21:26:53.980 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:26:54.081 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:26:54.083 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:26:54.138 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:26:54.140 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:26:54.140 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:26:54.263 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:26:54.349 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 86.66ms
+2025-04-29 21:26:54.353 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:26:54.353 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:26:54.357 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.5919ms
+2025-04-29 21:26:54.374 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.0985ms
+2025-04-29 21:26:54.416 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:26:54.429 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.6453ms
+2025-04-29 21:27:00.040 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - null null
+2025-04-29 21:27:00.059 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:27:00.073 +07:00 [INF] Route matched with {action = "GetChatBotID", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatBotID() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:27:00.960 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-04-29 21:27:00.964 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API) in 886.5885ms
+2025-04-29 21:27:00.965 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:27:00.967 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 923.2519 ms
+2025-04-29 21:27:00.969 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - 200 null text/plain; charset=utf-8 929.2273ms
+2025-04-29 21:28:36.890 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:28:37.008 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:28:37.010 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:28:37.070 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:28:37.071 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:28:37.072 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:28:37.131 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:28:37.213 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.5410 ms
+2025-04-29 21:28:37.217 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 87.2016ms
+2025-04-29 21:28:37.219 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:28:37.219 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:28:37.225 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 6.3235ms
+2025-04-29 21:28:37.241 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.8775ms
+2025-04-29 21:28:37.342 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:28:37.355 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.0730 ms
+2025-04-29 21:28:37.358 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.2624ms
+2025-04-29 21:29:03.111 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:29:03.210 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:29:03.212 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:29:03.270 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:29:03.272 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:29:03.273 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:29:03.373 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:29:03.456 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.0486 ms
+2025-04-29 21:29:03.461 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:29:03.461 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:29:03.461 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 88.6313ms
+2025-04-29 21:29:03.466 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 5.5751ms
+2025-04-29 21:29:03.482 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.4839ms
+2025-04-29 21:29:03.542 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:29:03.552 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.5487 ms
+2025-04-29 21:29:03.553 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.8817ms
+2025-04-29 21:29:12.948 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - null null
+2025-04-29 21:29:12.967 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:29:12.980 +07:00 [INF] Route matched with {action = "GetChatBotID", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetChatBotID() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:29:13.855 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-04-29 21:29:13.858 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API) in 874.439ms
+2025-04-29 21:29:13.859 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.GetChatBotID (EventZ.API)'
+2025-04-29 21:29:13.860 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 910.2217 ms
+2025-04-29 21:29:13.862 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/get-chat-bot-id - 200 null text/plain; charset=utf-8 914.5039ms
+2025-04-29 21:29:19.612 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/Auth/test-telegram-error - null null
+2025-04-29 21:29:19.617 +07:00 [INF] Executing endpoint 'EventZ.API.Controllers.AuthController.TestTelegramError (EventZ.API)'
+2025-04-29 21:29:19.620 +07:00 [INF] Route matched with {action = "TestTelegramError", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestTelegramError() on controller EventZ.API.Controllers.AuthController (EventZ.API).
+2025-04-29 21:29:19.634 +07:00 [ERR] ❌ Có lỗi trong /test-telegram-error
+System.Exception: ⚠️ Đây là lỗi test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestTelegramError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:29:19.646 +07:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2025-04-29 21:29:19.647 +07:00 [INF] Executed action EventZ.API.Controllers.AuthController.TestTelegramError (EventZ.API) in 23.7526ms
+2025-04-29 21:29:19.649 +07:00 [INF] Executed endpoint 'EventZ.API.Controllers.AuthController.TestTelegramError (EventZ.API)'
+2025-04-29 21:29:19.650 +07:00 [ERR] HTTP GET /Auth/test-telegram-error responded 500 in 35.0898 ms
+2025-04-29 21:29:19.651 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/Auth/test-telegram-error - 500 null text/plain; charset=utf-8 39.2789ms
+2025-04-29 21:30:07.787 +07:00 [INF] User profile is available. Using 'C:\Users\acer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-29 21:30:07.894 +07:00 [INF] Now listening on: https://localhost:7247
+2025-04-29 21:30:07.896 +07:00 [INF] Now listening on: http://localhost:5219
+2025-04-29 21:30:07.960 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 21:30:07.961 +07:00 [INF] Hosting environment: Development
+2025-04-29 21:30:07.961 +07:00 [INF] Content root path: E:\EventZ_VN\EventZ.Api\asp.api.basic
+2025-04-29 21:30:08.105 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/index.html - null null
+2025-04-29 21:30:08.190 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.8414 ms
+2025-04-29 21:30:08.194 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 21:30:08.194 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/_vs/browserLink - null null
+2025-04-29 21:30:08.195 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/index.html - 200 null text/html;charset=utf-8 90.4ms
+2025-04-29 21:30:08.198 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_framework/aspnetcore-browser-refresh.js - 200 13756 application/javascript; charset=utf-8 3.9006ms
+2025-04-29 21:30:08.215 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.2409ms
+2025-04-29 21:30:08.357 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - null null
+2025-04-29 21:30:08.368 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.7149 ms
+2025-04-29 21:30:08.370 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7247/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.9394ms
+2025-04-29 21:30:53.753 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.6753 ms
+2025-04-29 21:30:53.835 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.0951 ms
+2025-04-29 21:30:59.000 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 1.9691 ms
+2025-04-29 21:30:59.097 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.7696 ms
+2025-04-29 21:31:06.327 +07:00 [ERR] ❌ Có lỗi trong /test-telegram-error
+System.Exception: ⚠️ Đây là lỗi test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestTelegramError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:31:06.333 +07:00 [ERR] HTTP GET /Auth/test-telegram-error responded 500 in 178.9420 ms
+2025-04-29 21:31:57.671 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 32.7436 ms
+2025-04-29 21:31:57.879 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.4771 ms
+2025-04-29 21:31:58.208 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 2.5230 ms
+2025-04-29 21:31:58.386 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.1261 ms
+2025-04-29 21:32:06.773 +07:00 [INF] HTTP GET /Auth/test-telegram-direct responded 200 in 1033.8777 ms
+2025-04-29 21:35:30.904 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.6221 ms
+2025-04-29 21:35:31.030 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.9679 ms
+2025-04-29 21:35:39.321 +07:00 [ERR] ❌ Có lỗi trong /test-telegram-error
+System.Exception: ⚠️ Đây là lỗi test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestTelegramError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:35:39.335 +07:00 [ERR] HTTP GET /Auth/test-telegram-error responded 500 in 190.3736 ms
+2025-04-29 21:36:13.083 +07:00 [INF] HTTP GET /Auth/test-telegram-direct responded 200 in 928.4037 ms
+2025-04-29 21:36:57.954 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 31.7174 ms
+2025-04-29 21:36:58.156 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.1215 ms
+2025-04-29 21:37:06.097 +07:00 [ERR] ❌ Có lỗi trong /test-telegram-error
+System.Exception: ⚠️ Đây là lỗi test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestTelegramError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:37:06.103 +07:00 [ERR] HTTP GET /Auth/test-telegram-error responded 500 in 183.8310 ms
+2025-04-29 21:38:28.075 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 31.2372 ms
+2025-04-29 21:38:28.178 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.3852 ms
+2025-04-29 21:38:50.629 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 28.8115 ms
+2025-04-29 21:38:50.715 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.2727 ms
+2025-04-29 21:38:58.213 +07:00 [ERR] ❌ Có lỗi trong /test-telegram-error
+System.Exception: ⚠️ Đây là lỗi test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestTelegramError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:38:58.226 +07:00 [ERR] HTTP GET /Auth/test-telegram-error responded 500 in 196.1441 ms
+2025-04-29 21:40:18.648 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.2789 ms
+2025-04-29 21:40:18.735 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.2436 ms
+2025-04-29 21:40:25.446 +07:00 [ERR] ❌ Có lỗi trong /test-telegram-error
+System.Exception: ⚠️ Đây là lỗi test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.TestTelegramError() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 194
+2025-04-29 21:40:25.458 +07:00 [ERR] HTTP GET /Auth/test-telegram-error responded 500 in 200.2473 ms
+2025-04-29 21:41:30.393 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.1668 ms
+2025-04-29 21:41:30.482 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.2430 ms
+2025-04-29 21:41:35.803 +07:00 [ERR] 🔥 Đây là lỗi thử nghiệm gửi qua Telegram.
+2025-04-29 21:41:35.807 +07:00 [INF] HTTP GET /Auth/test-telegram-error responded 200 in 172.4336 ms
+2025-04-29 21:42:46.933 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.7629 ms
+2025-04-29 21:42:47.021 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.8490 ms
+2025-04-29 21:44:10.087 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.4100 ms
+2025-04-29 21:44:10.179 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.3513 ms
+2025-04-29 21:44:29.757 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 31.2863 ms
+2025-04-29 21:44:29.840 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.1142 ms
+2025-04-29 21:45:53.725 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 36.6746 ms
+2025-04-29 21:45:53.836 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.4377 ms
+2025-04-29 21:47:05.043 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.6284 ms
+2025-04-29 21:47:05.129 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.6302 ms
+2025-04-29 21:47:12.925 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 1100.4648 ms
+2025-04-29 21:47:56.177 +07:00 [ERR] 🔥 Đây là lỗi thử nghiệm gửi qua Telegram.
+2025-04-29 21:47:56.179 +07:00 [INF] HTTP GET /Auth/test-telegram-error responded 200 in 14.1975 ms
+2025-04-29 21:58:08.689 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.0735 ms
+2025-04-29 21:58:08.890 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.0859 ms
+2025-04-29 21:59:54.364 +07:00 [ERR] Đây là lỗi thử nghiệm gửi về Telegram
+2025-04-29 21:59:55.259 +07:00 [ERR] HTTP GET /test-telegram-error responded 500 in 909.5327 ms
+System.Exception: Đây là Exception test gửi về Telegram
+   at EventZ.API.Program.<>c.<Main>b__0_5() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Program.cs:line 138
+   at lambda_method5(Closure, Object, HttpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-04-29 21:59:56.132 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Đây là Exception test gửi về Telegram
+   at EventZ.API.Program.<>c.<Main>b__0_5() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Program.cs:line 138
+   at lambda_method5(Closure, Object, HttpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-29 21:59:57.169 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 1.4503 ms
+2025-04-29 22:00:39.351 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 32.6950 ms
+2025-04-29 22:00:39.535 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.7011 ms
+2025-04-29 22:00:45.065 +07:00 [ERR] Test error message, this should trigger Telegram notification.
+2025-04-29 22:00:45.938 +07:00 [INF] HTTP GET /Auth/test-telegram-error responded 200 in 1042.1298 ms
+2025-04-29 22:02:27.969 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 32.5852 ms
+2025-04-29 22:02:28.189 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.8366 ms
+2025-04-29 22:02:29.174 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 2.2916 ms
+2025-04-29 22:02:29.265 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.1764 ms
+2025-04-29 22:02:46.260 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 32.2370 ms
+2025-04-29 22:02:46.348 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.3645 ms
+2025-04-29 22:02:53.281 +07:00 [ERR] Hello tôi là bug rất vui được gặp bạn
+2025-04-29 22:02:54.192 +07:00 [INF] HTTP GET /Auth/test-telegram-error responded 200 in 1102.5287 ms
+2025-04-29 22:09:45.483 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.5059 ms
+2025-04-29 22:09:45.660 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.8107 ms
+2025-04-29 22:15:14.422 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.9315 ms
+2025-04-29 22:15:14.542 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.0176 ms
+2025-04-29 22:15:37.275 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 404 in 1438.6058 ms
+2025-04-29 22:18:19.337 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.7758 ms
+2025-04-29 22:18:19.497 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.3906 ms
+2025-04-29 22:18:25.477 +07:00 [ERR] [Get profile by user] Simulated error: Failed to fetch profile data.    at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 202
+2025-04-29 22:18:26.205 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 400 in 917.5433 ms
+2025-04-29 22:19:03.629 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.6017 ms
+2025-04-29 22:19:03.813 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.7419 ms
+2025-04-29 22:19:08.981 +07:00 [ERR] [Get profile by user] Simulated error: Failed to fetch profile data.    at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 202
+2025-04-29 22:19:09.673 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 400 in 877.7408 ms
+2025-04-29 22:20:53.049 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.3497 ms
+2025-04-29 22:20:53.161 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.4873 ms
+2025-04-29 22:21:16.323 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 28.9990 ms
+2025-04-29 22:21:16.421 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.0481 ms
+2025-04-29 22:21:23.514 +07:00 [ERR] Đây là Exception test gửi về Telegram
+2025-04-29 22:21:24.442 +07:00 [ERR] HTTP GET /Auth/get-profile-by-user responded 500 in 1113.5443 ms
+System.Exception: Đây là Exception test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 214
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-04-29 22:21:25.337 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Đây là Exception test gửi về Telegram
+   at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 214
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-29 22:21:50.562 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 31.7427 ms
+2025-04-29 22:21:50.684 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.2966 ms
+2025-04-29 22:21:57.505 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 32.6425 ms
+2025-04-29 22:21:57.595 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.1433 ms
+2025-04-29 22:22:53.136 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.6370 ms
+2025-04-29 22:22:53.229 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.4411 ms
+2025-04-29 22:39:39.861 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.9866 ms
+2025-04-29 22:39:40.054 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.2513 ms
+2025-04-29 22:41:33.293 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.5306 ms
+2025-04-29 22:41:33.393 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.8968 ms
+2025-04-29 22:41:39.867 +07:00 [ERR] [Get profile by user] This is a test error to log.    at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 202
+2025-04-29 22:41:40.609 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 400 in 1769.6414 ms
+2025-04-29 22:42:16.313 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 33.4697 ms
+2025-04-29 22:42:16.395 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.5550 ms
+2025-04-29 22:42:19.815 +07:00 [ERR] [Get profile by user] This is a test error to log.    at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 202
+2025-04-29 22:42:20.511 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 400 in 880.2856 ms
+2025-04-29 22:43:04.945 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.2743 ms
+2025-04-29 22:43:05.032 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.1177 ms
+2025-04-29 22:43:05.099 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 3.5470 ms
+2025-04-29 22:43:05.370 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 4.4575 ms
+2025-04-29 22:43:10.792 +07:00 [ERR] [Get profile by user] This is a test error to log at the ERROR level.    at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 202
+2025-04-29 22:43:11.486 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 400 in 886.4562 ms
+2025-04-29 22:44:27.929 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 28.1101 ms
+2025-04-29 22:44:27.932 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 8.5230 ms
+2025-04-29 22:44:28.039 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.7768 ms
+2025-04-29 22:44:34.771 +07:00 [ERR] [Get profile by user] Đây là lỗi thử nghiệm gửi về Telegram    at EventZ.API.Controllers.AuthController.GetProfileByUser() in E:\EventZ_VN\EventZ.Api\asp.api.basic\Controllers\AuthController.cs:line 202
+2025-04-29 22:44:35.586 +07:00 [INF] HTTP GET /Auth/get-profile-by-user responded 400 in 1006.8761 ms
+2025-04-29 22:45:09.081 +07:00 [ERR] Hello tôi là bug rất vui được gặp.
+2025-04-29 22:45:10.028 +07:00 [INF] HTTP GET /Auth/test-telegram-error responded 200 in 963.2929 ms
+2025-04-29 22:45:23.746 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.6176 ms
+2025-04-29 22:45:23.941 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.4280 ms
+2025-04-29 22:45:29.847 +07:00 [ERR] Hello tôi là bug rất vui được gặp.
+2025-04-29 22:45:30.736 +07:00 [INF] HTTP GET /Auth/test-telegram-error responded 200 in 1068.3935 ms
+2025-04-29 22:47:08.803 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.2379 ms
+2025-04-29 22:47:08.886 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.6460 ms
+2025-04-29 22:47:32.547 +07:00 [INF] HTTP GET /Auth/get-chat-id responded 200 in 1061.3872 ms
+2025-04-29 22:50:34.482 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.2593 ms
+2025-04-29 22:50:34.695 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.5677 ms
+2025-04-29 22:51:02.779 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.5295 ms
+2025-04-29 22:51:02.891 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.3214 ms
+2025-04-29 22:51:07.879 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 863.1489 ms
+2025-04-29 22:53:07.220 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 26.7353 ms
+2025-04-29 22:53:07.223 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 4.6717 ms
+2025-04-29 22:53:07.322 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.3291 ms
+2025-04-29 22:53:29.654 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.3337 ms
+2025-04-29 22:53:29.741 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.4063 ms
+2025-04-29 22:53:34.721 +07:00 [ERR] HTTP GET /Auth/get-chat-bot-id responded 500 in 894.2554 ms
+2025-04-29 22:53:57.619 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 45.7545 ms
+2025-04-29 22:53:57.830 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 11.8001 ms
+2025-04-29 22:55:54.560 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.3560 ms
+2025-04-29 22:55:54.743 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.8416 ms
+2025-04-29 22:55:58.184 +07:00 [ERR] HTTP GET /Auth/get-chat-bot-id responded 500 in 883.0806 ms
+2025-04-29 22:57:10.650 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 40.1958 ms
+2025-04-29 22:57:10.852 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.0815 ms
+2025-04-29 22:58:21.993 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 30.6246 ms
+2025-04-29 22:58:22.217 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.6364 ms
+2025-04-29 22:58:29.112 +07:00 [ERR] HTTP GET /Auth/get-chat-bot-id responded 500 in 904.4084 ms
+2025-04-29 22:59:28.448 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 29.8457 ms
+2025-04-29 22:59:28.582 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 8.8577 ms
+2025-04-29 22:59:33.756 +07:00 [INF] HTTP GET /Auth/get-chat-bot-id responded 200 in 896.0988 ms
+2025-04-29 22:59:41.542 +07:00 [INF] HTTP GET /swagger/index.html responded 200 in 28.6463 ms
+2025-04-29 22:59:41.625 +07:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 7.3098 ms
