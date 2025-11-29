@@ -3,7 +3,7 @@ import helpers from '../helpers';
 
 export const baseURL =
   process.env.NODE_ENV === 'production'
-    ? 'https://lms.autopass.blog/'
+    ? 'https://api-litmers.henrytechnical.site/'
     : 'https://localhost:7247/';
 
 const onRequestSuccess = (config: any) => {
